@@ -1407,7 +1407,7 @@ static inline void del_timer_wait_running(struct timer_list *timer) { }
  * * %0	- The timer was not pending
  * * %1	- The timer was pending and deactivated
  */
-int timer_delete_sync(struct timer_list *timer)
+int del_timer_sync(struct timer_list *timer)
 {
 	int ret;
 
@@ -1440,7 +1440,7 @@ int timer_delete_sync(struct timer_list *timer)
 
 	return ret;
 }
-EXPORT_SYMBOL(timer_delete_sync);
+EXPORT_SYMBOL(del_timer_sync);
 
 static void call_timer_fn(struct timer_list *timer,
 			  void (*fn)(struct timer_list *),
