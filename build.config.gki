@@ -1,0 +1,3 @@
+DEFCONFIG=vendor/a23xq_KSU_defconfig
+POST_DEFCONFIG_CMDS=""
+
